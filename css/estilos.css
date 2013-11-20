@@ -1,0 +1,195 @@
+/*Reseteo universal*/
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+article,figcaption,figure,footer, header, hgroup,nav,section{
+	display:block;/*todas las estructuras que trabajamos con semantica diremos que su naturaleza sea en BLOQUE*/
+}
+
+/*Fin de reseteo uiversal*/
+
+
+/*Estilos del sitio*/
+@font-face {
+    font-family: 'Chalet';
+    src: url('../fonts/Chalet.eot');
+    src: url('../fonts/Chalet.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Chalet.woff') format('woff'),
+         url('../fonts/Chalet.ttf') format('truetype'),
+         url('../fonts/Chalet.svg#Chalet') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background:#eaeaea; 
+	color:#000;
+	font-family: "Chalet", Helvetica, Verdana;
+	font-size: 1em;
+}
+
+a{
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color:#5E5E5E;/*#ccc*/
+   background-color: #8D8A8A;/*#212121;*/
+   color:#000;
+   display: block;
+   font-family: arial, Helvetica, sans-serif;
+   font-size: 0.9em;
+   text-decoration: none;
+   padding: 6px;
+}
+
+a:hover{
+    
+    background-color: #666;
+    border-right-width: 5px;
+    border-right-style: solid;
+    border-right-color: #36F;
+    color: #FFF;
+
+}
+
+a:hover > i.icon_welcome{
+    background-image: url("../img/icon_welcome_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_featured{
+    background-image: url("../img/icon_featured_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_people{
+    background-image: url("../img/icon_people_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_music{
+    background-image: url("../img/icon_music_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_mixes{
+    background-image: url("../img/icon_mixes_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_videos{
+    background-image: url("../img/icon_videos_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a:hover > i.icon_radio{
+    background-image: url("../img/icon_radio_white.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+nav {
+    background-color: #8D8A8A;
+    margin-left: 5px;
+    width: 130px;
+  
+}
+
+
+nav > h1 {
+    color: #FFF;
+    margin-bottom: 25px;
+}
+
+
+ul{
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-top-color: #5E5E5E;/*#ccc*/
+    border-right-color: #5E5E5E;/*#ccc*/
+    border-left-color: #5E5E5E; /*#ccc*/
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    
+}
+
+
+
+.icon_welcome {
+    background-image: url("../img/icon_welcome.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_featured {
+   background-image: url("../img/icon_featured.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_people {
+   background-image: url("../img/icon_people.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_music {
+   background-image: url("../img/icon_music.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_mixes {
+   background-image: url("../img/icon_mixes.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_videos {
+   background-image: url("../img/icon_videos.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_radio {
+   background-image: url("../img/icon_radio.png");
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a.welcome > span, a.featured > span ,a.people> span, a.music > span, a.mixes > span, a.videos > span, a.radio > span{
+  vertical-align: middle;
+}
+
+a.welcome > i, a.featured > i ,a.people> i, a.music > i, a.mixes > i, a.videos > i, a.radio > i{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
